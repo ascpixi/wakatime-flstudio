@@ -221,7 +221,7 @@ public static class WakaTime
                 "--entity", projectPath,
                 "--category", PreferredCategory,
                 "--lines-in-file", entityCount.ToString(),
-                "--plugin", $"wakatime-flstudio/{App.Version}",
+                "--plugin", $"flstudio/{proj.VersionString} wakatime-flstudio/{App.Version}",
                 { "--write", isWrite },
                 { ["--project", wakatimeProject!], wakatimeProject != null }
             }
